@@ -75,6 +75,7 @@ const Header = (props) => {
                                   <Link to='/room&facilities' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Services" >Room&Facilities</Link>
                                   <Link to='/review' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Contact Us" >Review</Link>
                                   <Link to='/book-now' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Services" >Book-Now</Link>
+                                  <Link to='/login' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Login" >Login</Link>
                                   {/* <div to='/' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Home" >Home</div>
                                   <div to='/services' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Services" >Services</div>
                                   <div to='/news' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="News" >News</div>

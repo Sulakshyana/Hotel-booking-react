@@ -28,7 +28,7 @@ const Review = () =>{
     //       }
 
       const  postFormData = async () => {
-        axios.post('http://localhost/api/user/review', formData)
+        axios.post('http://localhost/hotel_booking_api/user/review', formData)
       }
       const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true);
       const [isEmailFilled, setIsEmailFilled] = useState(false);
