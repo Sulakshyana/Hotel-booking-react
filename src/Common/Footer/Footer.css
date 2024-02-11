@@ -1,0 +1,30 @@
+.footer {
+    background-color: #313031;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    font-family: 'Nunito-Semibold';
+    font-size: 16px;
+    opacity: 66%;
+}
+
+.footer-copyright {
+    background-color: #363536;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Nunito-Regular';
+}
+
+.footer h5 {
+    font-family: 'Roboto-Bold';
+    font-size: 20px;
+}
+
+.f-logo {
+    width: 11rem !important;
+}
+
+.f-icons {
+    font-size: 1.5rem;
+}

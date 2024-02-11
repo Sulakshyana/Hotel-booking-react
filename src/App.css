@@ -1,0 +1,107 @@
+@font-face {
+	font-family: "Roboto-Regular";
+    src: url('./Fonts/glyphicons-halflings-regular.eot');
+    src: url('./Fonts/glyphicons-halflings-regular.svg') format('embedded-opentype'),
+        url('./Fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+        url('./Fonts/glyphicons-halflings-regular.woff') format('woff'),
+        url('./Fonts/glyphicons-halflings-regular.ttf') format('truetype');
+}
+/* @font-face {
+	font-family: "Roboto-Medium";
+    src: url('./Fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Roboto-Bold";
+    src: url('./Fonts/Roboto-Bold.eot');
+    src: url('./Fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./Fonts/Roboto-Bold.woff2') format('woff2'),
+        url('./Fonts/Roboto-Bold.woff') format('woff'),
+        url('./Fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: "Kisah-Cerita-Regular";
+    src: url('./Fonts/Kisah-Ceritra-Regular.otf') format('otf');
+}
+
+@font-face {
+	font-family: "Nunito-Regular";
+    src: url('./Fonts/Nunito-Regular_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: "Nunito-Light";
+    src: url('./Fonts/Nunito-Light_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: "Nunito-SemiBold";
+    src: url('./Fonts/Nunito-SemiBold_0.ttf') format('truetype');
+}
+@font-face {
+	font-family: "Nunito-Bold";
+    src: url('./Fonts/Nunito-Bold_0.ttf') format('truetype');
+} */
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+@media screen and (min-width:1920px) {
+	.container{
+		max-width: 1366px !important;
+	 }
+}
+
+@media screen and (min-width:1500px) and (max-width: 1899px) {
+	.container{
+		max-width: 1080px !important;
+  
+	 }
+
+     /* h1 {
+        font-size: 2.3rem;
+     } */
+  }
+
+  @media screen and (min-width:1400px) and (max-width: 1499px) {
+	.container{
+		max-width: 1080px !important;
+  
+	 }
+  }
+
+
+  @media screen and (min-width:1299px) and (max-width: 1399px) {
+	.container{
+		max-width: 1040px !important;
+  
+	 }
+  }
+
+
+  @media screen and (min-width:1100px) and (max-width: 1298px) {
+	.container{
+		max-width: 890px !important;
+  
+	 }
+
+     h1 {
+        margin-top: 0.1rem !important;
+     }
+  }
+
+  @media screen and (min-width:991px) and (max-width: 1099px) {
+	.container{
+		max-width: 767px !important;
+  
+	 }
+  }
+  /* @media screen and (min-width:1360px) {
+    .container{
+        max-width: 1214px !important;
+  
+     }
+  } */
+  h1 {
+   font-size: 1.8rem;
+}
