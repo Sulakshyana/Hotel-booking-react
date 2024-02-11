@@ -28,7 +28,7 @@ const Review = () =>{
     //       }
 
       const  postFormData = async () => {
-        axios.post('http://localhost/api/user/review', formData)
+        axios.post('http://localhost/hotel_booking_api/user/review', formData)
       }
       const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true);
       const [isEmailFilled, setIsEmailFilled] = useState(false);
@@ -107,16 +107,18 @@ const Review = () =>{
                 <div className="col form-group">
                   <label htmlFor="review" className="form-label">REVIEW*</label>
                   <textarea 
-                    placeholder="Leave a review Here" 
-                    name="review" 
-                    className="form-control" 
-                    id="exampleFormControlTextarea1" 
-                    value={formData.message}
-                    onChange={(e) => {
-                      setFormData({ ...formData, reiew: e.target.value });}}
-                    rows="4"  
-                    required
-                    aria-required="true" ></textarea>
+    placeholder="Leave a review Here" 
+    name="review" 
+    className="form-control" 
+    id="exampleFormControlTextarea1" 
+    value={formData.review} // Corrected field name
+    onChange={(e) => {
+        setFormData({ ...formData, review: e.target.value }); // Corrected field name
+    }}
+    rows="4"  
+    required
+    aria-required="true"
+></textarea>
                 </div>
                 {/* <div className="row mb-4">
                   <div className="col form-group" >
