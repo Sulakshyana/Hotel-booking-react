@@ -1,0 +1,114 @@
+/* .navbar {
+    --bs-navbar-padding-y : 0.6rem !important
+} */
+
+.navbar-toggler {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important; 
+}
+
+.navbar-toggler >.hamburger {
+    display: none;
+}
+
+.collapsed>.hamburger{
+    display: block;
+}
+
+.collapsed>.cross {
+    display: none;
+}
+
+.nav-custom-edits {
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    text-decoration: none;
+    color: #313031;
+    white-space: nowrap;
+
+}
+ 
+.nav-custom-edits:hover {
+    /* font-family: "Roboto-Bold"; */
+    color: #313031;
+}
+
+.dropdown-toggle.nav-link {
+    color: #313031 !important;
+    padding: 0 !important;
+}
+
+
+
+
+.navbar-brand {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.navbar-brand img{
+    width: 7.5rem;
+}
+
+.h1-contact {
+    font-family: 'Nunito-Semibold';
+    font-size: 16px;
+    color: #313031;
+    word-break: break-all;
+}
+
+@media only screen and (max-width: 1400px){
+    .navbar-brand img{
+        width: 6.5rem;
+    }
+
+    .nav-custom-edits {
+        font-size: 16px;
+    }
+
+    .h1-contact {
+        font-size: 15px;
+    }
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+  }
+  
+  .search-container {
+    width: 55%;
+  }
+  
+  .search-container input {
+    background-color: rgba(0, 0, 0, 0);
+    outline: none; 
+    width: 90%;
+  }
+
+  .search-container input::placeholder {
+    padding-top: 3px;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+  }
+  .search-container input:focus {
+    position: relative;
+    bottom: 0;
+    font-size: 30px !important;
+  }
+
+  .close-button {
+    background-color: black;
+    background: none;
+    border: hidden;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px, 0px, 0px, 20px;
+  }
+  
+  
+  
