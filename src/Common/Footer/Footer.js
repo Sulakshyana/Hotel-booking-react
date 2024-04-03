@@ -83,9 +83,7 @@ import "./Footer.css"
                           </div>
                       </div> */}
                   </Container>
-                  <div className="text-center footer-copyright py-1 py-lg-2 py-xxl-3">
-                      © 2023. Hope Fertility and Diagnostic Centre Pvt. Ltd. All Rights Reserved.
-                  </div>
+
               </div>
           </footer>
       )

@@ -48,8 +48,8 @@ const Review = () =>{
       <div><ToastContainer/></div>
         <div className="container" >
           <div class="row" id="containerDiv">
-            <div class="col-md-6 order-0 order-md-0 formDiv">     
-              <h3 className="title mb-4 m-3">Leave your Review</h3>
+            <div class="col order-0 order-md-0 formDiv">     
+              <h3 className="title mb-4 m-3 justify-content-center">Leave your Review</h3>
               <form className="m-3" onSubmit={handleFormSubmit}>
               {/* <form className="m-3"> */}
                 <div className="row mb-4">
@@ -120,22 +120,6 @@ const Review = () =>{
     aria-required="true"
 ></textarea>
                 </div>
-                {/* <div className="row mb-4">
-                  <div className="col form-group" >
-                    <label htmlFor="suggestion" className="form-label ">SUGGESTION*</label>
-                    <input 
-                      type="text" 
-                      name="address" 
-                      placeholder="Address" 
-                      className="form-control" 
-                      id="exampleInput"
-                      value={formData.address}
-                      onChange={(e) => {
-                        setFormData({ ...formData, address: e.target.value });}}
-                      required 
-                      aria-required="true" />
-                  </div>
-                </div> */}
               </div>
               <div className="row justify-content-end">
                 <div className="col-4 d-flex justify-content-end">
@@ -144,9 +128,6 @@ const Review = () =>{
               </div>
             </form> 
           </div>
-            <div className="col-md-6 order-1 order-md-1">
-              
-            </div>
           </div>
         </div>
         <Footer/>

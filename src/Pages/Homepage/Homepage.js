@@ -4,16 +4,23 @@ import {Images } from "../../Constants";
 import { FaLine } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import image5 from "../../images/home_gallary/5.jpg";
-import image6 from "../../images/home_gallary/6.jpg";
-import image7 from "../../images/home_gallary/7.jpg";
-import image10 from "../../images/home_gallary/10.jpeg"
+
 
 const slide_images = [
-  image5,
-  image6,
-  image7,
-  image10,
+  Images.Images.image5,
+  Images.Images.image6,
+  Images.Images.image7,
+  Images.Images.image10,
+];
+
+const gallery_images = [
+  Images.Images.image1,
+  Images.Images.image2,
+  Images.Images.image8,
+  Images.Images.image9,
+  Images.Images.image5,
+  Images.Images.image10,
+
 ];
 
 const Homepage = (props) => {
@@ -33,7 +40,7 @@ const Homepage = (props) => {
         <div className="carousel-inner">
           {slide_images.map((image, index) => (
             <div key={index} className={`carousel-item ${index === activeIndex ? 'active' : ''}`}>
-              <img src={image} className="d-block w-100" alt={`Slide ${index + 1}`} />
+              <img src={image} height="500px" width="100%" className="d-block w-100" alt={`Slide ${index + 1}`} />
             </div>
           ))}
         </div>
@@ -53,7 +60,7 @@ const Homepage = (props) => {
           <div className="mb-3">
             <h5 className="text-center">RELIVE A BYGONE ERA OF NEPAL'S HISTORY</h5>
             <p>
-              Hotel Aagaman, Kathmandu is a heritage hotel, housed in a 19th-century palace within walking distance to popular places Thamel and Durbar Marg, Kathmandu's tourist hubs. It was the royal residence of the rulers of Nepal from 1894 until 1964, when it was converted into a luxury hotel. The facade was kept intact but the interiors were redesigned to give travellers the kind of comfort they'd expect of a world-class hotel. The hotel is characterized by exquisite and authentic objects d'art. For example, the carved windows displayed in the lobby bar are over 200 years old.
+              Hotel Aagaman,Kathmandu's tourist hubs converted into a luxury hotel gives travellers the kind of comfort they'd expect of a world-class hotel.
             </p>
           </div>
         </div>
@@ -68,56 +75,27 @@ const Homepage = (props) => {
               Phone: +977 1 4511055
             </p>
             <a href="https://www.google.com/maps/place/Hotel+Shanker" target="_blank" className="d-block mb-2">Our Location on Google Maps →</a>
-            <a href="#" target="_blank" className="d-block">Full Address for VISA Form / GDS Codes →</a>
           </div>
         </div>
       </div>
 
 
-    <div class="row">
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 my-lg-1 my-xxl-2">
+    {gallery_images.map((image, index) => (
+  <div key={index} className='px-3 mb-3 mb-md-4 mb-xl-2'>
   <img
-      src={Images.Images.image1}
+      src={image}
       className="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-
-    <img
-      src={Images.Images.image2}
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
+      alt=""
+      height="200px"
+      width="100%"
     />
   </div>
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src={Images.Images.image8}
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
-    />
+  ))}
 
-    <img
-      src={Images.Images.image9}
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src={Images.Images.image5}
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
-    />
-
-    <img
-      src={Images.Images.image10}
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
-    />
-  </div>
-  <div className="text-center  mb-5"><Link to="/photo-gallery"><button className='btn btn-lg border border-dark pb -6'>Go To Photo Gallery <FaLine/></button></Link></div>
 </div>
+<div className="text-center  mb-5"><Link to="/photo-gallery"><button className='btn btn-lg border border-dark pb -6'>Go To Photo Gallery <FaLine/></button></Link></div>
 
 
       <div className="row mt-6">
@@ -125,10 +103,10 @@ const Homepage = (props) => {
           <h2 className="text-center mb-4">A FAMILY FRIENDLY HOTEL IN KATHMANDU</h2>
           <p className="text-center mb-4">DELUXE ROOMS AND SUITES</p>
           <p className="text-center">
-            Open the doors to any of our rooms at Hotel Shanker Kathmandu and you will be impressed with our comfortable and cozy yet classic furnishings that evoke an air of 'Old World Elegance' only found in a few 'great' hotels around the world.
+            Open the doors to any of our rooms at Hotel and you will be impressed with our comfortable and cozy furnishings.
           </p>
           <p className="text-center">
-            Seize the opportunity to relive a bygone era of Nepal's history at a price you cannot beat! Get the royal treatment that you have long deserved in an authentic heritage hotel in Kathmandu.
+            Seize the opportunity to relive a luxury at a price you cannot beat! Get the treatment that you have long deserved.
           </p>
         </div>
         <div className="col-6">

@@ -57,24 +57,11 @@ const Header = (props) => {
                   <Navbar.Collapse id="basic-navbar-nav">
                       <Nav className="justify-content-end flex-grow-1 d-flex align-items-start align-items-xl-center">
                           <div className="d-flex flex-column my-2">
-                              <div className="d-flex flex-column flex-lg-row justify-content-end">
-                                  <div className="ms-3 ms-lg-0 me-1 me-xl-3 h1-contact my-2 my-lg-auto">
-                                      <MdAccessTimeFilled className="mx-lg-1" color="#313031" size={16}/> <span> Sun - Fri 10:00 AM to 4:00 PM </span>
-                                  </div>
-                                  <div className="mx-3 h1-contact my-2 my-lg-auto">
-                                      <FaPhoneAlt className="mx-lg-1" color="#313031" size={12} /> <span> 01-5555555</span>
-
-                                  </div>
-                                  <div className="ms-3 me-0 pe-0 h1-contact my-2 my-lg-auto">
-                                      <IoMdMail className="mx-lg-1" color="#313031" size={15}/> <span className="">RoomBookingSystem@gmail.com</span>
-                                  </div>
-
-                              </div>
                               <div className=" me-0 pe-0 mt-1 mt-lg-3 d-flex flex-column flex-lg-row justify-content-lg-end">
                                   <Link to='/' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Home" >Home</Link>
-                                  <Link to='/room&facilities' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Services" >Room&Facilities</Link>
-                                  <Link to='/review' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Contact Us" >Review</Link>
-                                  <Link to='/book-now' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Services" >Book-Now</Link>
+                                  <Link to='/room&facilities' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="rooms&facilities" >Room&Facilities</Link>
+                                  <Link to='/review' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="review" >Review</Link>
+                                  <Link to='/book-now' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="book-now" >Book-Now</Link>
                                   {/* <div to='/' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Home" >Home</div>
                                   <div to='/services' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="Services" >Services</div>
                                   <div to='/news' className="text-capitalize nav-custom-edits mx-4 my-2 my-lg-0" title="News" >News</div>
